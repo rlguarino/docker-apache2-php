@@ -14,3 +14,5 @@ ADD supervisord-apache2.conf /etc/supervisord/conf.d/supervisor-apache2.conf
 ADD start-apache2.sh /start-apache2.sh
 RUN chmod 755 /*.sh
 RUN ln -s /var/www/ /app
+
+EXPOSE 80
